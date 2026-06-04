@@ -1,0 +1,1198 @@
+[
+  {
+    "slot": 1,
+    "weapons": [
+      {
+        "weapon": "baseball_bat",
+        "base": 1,
+        "slot": 1,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "bornheim",
+        "base": 1,
+        "slot": 1,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "bornheim_extended",
+        "base": 0,
+        "slot": 1,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "bornheim_silencer",
+        "base": 0,
+        "slot": 1,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "calvary_saber",
+        "base": 1,
+        "slot": 1,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "conversion",
+        "base": 1,
+        "slot": 1,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "conversion_chain_pistol",
+        "base": 0,
+        "slot": 1,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "hand_crossbow",
+        "base": 1,
+        "slot": 1,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "lemat",
+        "base": 1,
+        "slot": 1,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "machete",
+        "base": 1,
+        "slot": 1,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "nagant",
+        "base": 1,
+        "slot": 1,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "nagant_silencer",
+        "base": 0,
+        "slot": 1,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "new_army",
+        "base": 1,
+        "slot": 1,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "new_army_swift",
+        "base": 0,
+        "slot": 1,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "officer",
+        "base": 1,
+        "slot": 1,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "officer_brawler",
+        "base": 0,
+        "slot": 1,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "pax",
+        "base": 1,
+        "slot": 1,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "pax_claw",
+        "base": 0,
+        "slot": 1,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "pax_trueshot",
+        "base": 0,
+        "slot": 1,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "scottfield",
+        "base": 1,
+        "slot": 1,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "scottfield_brawler",
+        "base": 0,
+        "slot": 1,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "scottfield_spitfire",
+        "base": 0,
+        "slot": 1,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "scottfield_swift",
+        "base": 0,
+        "slot": 1,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "sparks_pistol",
+        "base": 0,
+        "slot": 1,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "sparks_pistol_silencer",
+        "base": 0,
+        "slot": 1,
+        "ammo1": [],
+        "ammo2": []
+      }
+    ]
+  },
+  {
+    "slot": 2,
+    "weapons": [
+      {
+        "weapon": "bornheim_duel",
+        "base": 1,
+        "slot": 2,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "bornheim_extended_duel",
+        "base": 0,
+        "slot": 2,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "bornheim_silencer_duel",
+        "base": 0,
+        "slot": 2,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "conversion_duel",
+        "base": 1,
+        "slot": 2,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "conversion_chain_pistol_duel",
+        "base": 0,
+        "slot": 2,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "lemat_duel",
+        "base": 1,
+        "slot": 2,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "nagant_duel",
+        "base": 1,
+        "slot": 2,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "nagant_silencer_duel",
+        "base": 0,
+        "slot": 2,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "new_army_duel",
+        "base": 1,
+        "slot": 2,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "new_army_swift_duel",
+        "base": 0,
+        "slot": 2,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "officer_duel",
+        "base": 1,
+        "slot": 2,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "officer_brawler_duel",
+        "base": 0,
+        "slot": 2,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "pax_duel",
+        "base": 1,
+        "slot": 2,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "pax_claw_duel",
+        "base": 0,
+        "slot": 2,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "pax_trueshot_duel",
+        "base": 0,
+        "slot": 2,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "scottfield_duel",
+        "base": 1,
+        "slot": 2,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "scottfield_brawler_duel",
+        "base": 0,
+        "slot": 2,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "scottfield_spitfire_duel",
+        "base": 0,
+        "slot": 2,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "scottfield_swift_duel",
+        "base": 0,
+        "slot": 2,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "sparks_pistol_duel",
+        "base": 0,
+        "slot": 2,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "sparks_pistol_silencer_duel",
+        "base": 0,
+        "slot": 2,
+        "ammo1": [],
+        "ammo2": []
+      },
+
+      {
+        "weapon": "bomb_launcher",
+        "base": 1,
+        "slot": 2,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "bornheim_match",
+        "base": 0,
+        "slot": 2,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "centenial_pointman",
+        "base": 0,
+        "slot": 2,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "centenial_shorty",
+        "base": 0,
+        "slot": 2,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "centenial_shorty_silencer",
+        "base": 0,
+        "slot": 2,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "chu_ko_nu",
+        "base": 1,
+        "slot": 2,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "combat_axe",
+        "base": 1,
+        "slot": 2,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "dolch",
+        "base": 1,
+        "slot": 2,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "dolch_bullseye",
+        "base": 0,
+        "slot": 2,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "dolch_claw",
+        "base": 0,
+        "slot": 2,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "drilling_hatchet",
+        "base": 0,
+        "slot": 2,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "drilling_shorty",
+        "base": 0,
+        "slot": 2,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "haymaker",
+        "base": 1,
+        "slot": 2,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "katana",
+        "base": 1,
+        "slot": 2,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "mosin_obrez",
+        "base": 1,
+        "slot": 2,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "mosin_obrez_extended",
+        "base": 0,
+        "slot": 2,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "mosin_obrez_mace",
+        "base": 0,
+        "slot": 2,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "nagant_deadeye",
+        "base": 0,
+        "slot": 2,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "nagant_precision",
+        "base": 0,
+        "slot": 2,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "railroad_hammer",
+        "base": 1,
+        "slot": 2,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "rival_mace",
+        "base": 0,
+        "slot": 2,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "rival_shorty",
+        "base": 0,
+        "slot": 2,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "romero_hatchet",
+        "base": 0,
+        "slot": 2,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "romero_shorty",
+        "base": 0,
+        "slot": 2,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "scottfield_precision",
+        "base": 0,
+        "slot": 2,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "specter_shorty",
+        "base": 0,
+        "slot": 2,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "springfield_bullseye",
+        "base": 0,
+        "slot": 2,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "springfield_shorty",
+        "base": 0,
+        "slot": 2,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "springfield_striker",
+        "base": 0,
+        "slot": 2,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "terminus_shorty",
+        "base": 0,
+        "slot": 2,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "uppercut",
+        "base": 1,
+        "slot": 2,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "vandal",
+        "base": 1,
+        "slot": 2,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "vandal_bullseye",
+        "base": 0,
+        "slot": 2,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "vandal_striker",
+        "base": 0,
+        "slot": 2,
+        "ammo1": [],
+        "ammo2": []
+      }
+    ]
+  },
+  {
+    "slot": 3,
+    "weapons": [
+      {
+        "weapon": "dolch_duel",
+        "base": 1,
+        "slot": 3,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "dolch_bullseye_duel",
+        "base": 0,
+        "slot": 3,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "dolch_claw_duel",
+        "base": 0,
+        "slot": 3,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "uppercut_duel",
+        "base": 1,
+        "slot": 3,
+        "ammo1": [],
+        "ammo2": []
+      },
+
+      {
+        "weapon": "auto_shorty",
+        "base": 0,
+        "slot": 3,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "berthier",
+        "base": 1,
+        "slot": 3,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "berthier_deadeye",
+        "base": 0,
+        "slot": 3,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "berthier_marksman",
+        "base": 0,
+        "slot": 3,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "berthier_riposte",
+        "base": 0,
+        "slot": 3,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "bomb_lance",
+        "base": 0,
+        "slot": 3,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "carbine",
+        "base": 1,
+        "slot": 3,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "carbine_aperture",
+        "base": 0,
+        "slot": 3,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "carbine_silencer",
+        "base": 0,
+        "slot": 3,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "dolch_percision",
+        "base": 0,
+        "slot": 3,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "frontier",
+        "base": 1,
+        "slot": 3,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "frontier_marksman",
+        "base": 0,
+        "slot": 3,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "frontier_silencer",
+        "base": 0,
+        "slot": 3,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "hunting_bow",
+        "base": 1,
+        "slot": 3,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "lemat_carbine",
+        "base": 0,
+        "slot": 3,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "lemat_carbine_marksman",
+        "base": 0,
+        "slot": 3,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "mosin_obrez_match",
+        "base": 0,
+        "slot": 3,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "mosin_obrez_sharpeye",
+        "base": 0,
+        "slot": 3,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "officer_carbine",
+        "base": 0,
+        "slot": 3,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "officer_carbine_deadeye",
+        "base": 0,
+        "slot": 3,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "uppercut_deadeye",
+        "base": 0,
+        "slot": 3,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "uppercut_precision",
+        "base": 0,
+        "slot": 3,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "vetterli",
+        "base": 1,
+        "slot": 3,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "vetterli_bayonet",
+        "base": 0,
+        "slot": 3,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "vetterli_deadeye",
+        "base": 0,
+        "slot": 3,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "vetterli_marksman",
+        "base": 0,
+        "slot": 3,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "vetterli_silencer",
+        "base": 0,
+        "slot": 3,
+        "ammo1": [],
+        "ammo2": []
+      }
+    ]
+  },
+  {
+    "slot": 4,
+    "weapons": [
+      {
+        "weapon": "centenial",
+        "base": 1,
+        "slot": 4,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "centenial_trauma",
+        "base": 0,
+        "slot": 4,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "centennial_sniper",
+        "base": 0,
+        "slot": 4,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "crossbow",
+        "base": 1,
+        "slot": 4,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "crossbow_deadeye",
+        "base": 0,
+        "slot": 4,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "drilling",
+        "base": 1,
+        "slot": 4,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "infantry",
+        "base": 1,
+        "slot": 4,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "infantry_bayonet",
+        "base": 0,
+        "slot": 4,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "infantry_sniper",
+        "base": 0,
+        "slot": 4,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "krag",
+        "base": 1,
+        "slot": 4,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "krag_bayonet",
+        "base": 0,
+        "slot": 4,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "krag_silencer",
+        "base": 0,
+        "slot": 4,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "krag_sniper",
+        "base": 0,
+        "slot": 4,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "lebel",
+        "base": 1,
+        "slot": 4,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "lebel_aperture",
+        "base": 0,
+        "slot": 4,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "lebel_marksman",
+        "base": 0,
+        "slot": 4,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "lebel_talon",
+        "base": 0,
+        "slot": 4,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "mako",
+        "base": 1,
+        "slot": 4,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "mako_aperture",
+        "base": 0,
+        "slot": 4,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "mako_claw",
+        "base": 0,
+        "slot": 4,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "marathon",
+        "base": 1,
+        "slot": 4,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "marathon_swift",
+        "base": 0,
+        "slot": 4,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "martini_henry",
+        "base": 1,
+        "slot": 4,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "martini_henry_deadeye",
+        "base": 0,
+        "slot": 4,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "martini_henry_ironside",
+        "base": 0,
+        "slot": 4,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "martini_henry_marksman",
+        "base": 0,
+        "slot": 4,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "martini_henry_riposte",
+        "base": 0,
+        "slot": 4,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "maynard_sniper",
+        "base": 1,
+        "slot": 4,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "mosin_nagant",
+        "base": 1,
+        "slot": 4,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "mosin_nagant_bayonet",
+        "base": 0,
+        "slot": 4,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "mosin_nagant_sniper",
+        "base": 0,
+        "slot": 4,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "ranger",
+        "base": 1,
+        "slot": 4,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "ranger_aperture",
+        "base": 0,
+        "slot": 4,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "ranger_swift",
+        "base": 0,
+        "slot": 4,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "ranger_talon",
+        "base": 0,
+        "slot": 4,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "rival",
+        "base": 1,
+        "slot": 4,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "rival_trauma",
+        "base": 0,
+        "slot": 4,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "romero",
+        "base": 1,
+        "slot": 4,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "romero_alamo",
+        "base": 0,
+        "slot": 4,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "romero_talon",
+        "base": 0,
+        "slot": 4,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "slate",
+        "base": 1,
+        "slot": 4,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "slate_riposte",
+        "base": 0,
+        "slot": 4,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "sparks",
+        "base": 1,
+        "slot": 4,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "sparks_silencer",
+        "base": 0,
+        "slot": 4,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "sparks_sniper",
+        "base": 0,
+        "slot": 4,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "specter",
+        "base": 1,
+        "slot": 4,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "specter_bayonet",
+        "base": 0,
+        "slot": 4,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "springfield",
+        "base": 1,
+        "slot": 4,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "springfield_bayonet",
+        "base": 0,
+        "slot": 4,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "springfield_marksman",
+        "base": 0,
+        "slot": 4,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "terminus",
+        "base": 1,
+        "slot": 4,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "vetterli_cyclone",
+        "base": 0,
+        "slot": 4,
+        "ammo1": [],
+        "ammo2": []
+      }
+    ]
+  },
+  {
+    "slot": 5,
+    "weapons": [
+      {
+        "weapon": "auto",
+        "base": 1,
+        "slot": 5,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "maynard_sniper_silencer",
+        "base": 0,
+        "slot": 5,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "mosin_nagant_avtomat",
+        "base": 0,
+        "slot": 5,
+        "ammo1": [],
+        "ammo2": []
+      },
+      {
+        "weapon": "nitro_express",
+        "base": 1,
+        "slot": 5,
+        "ammo1": [],
+        "ammo2": []
+      }
+    ]
+  }
+]
