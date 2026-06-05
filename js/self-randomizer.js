@@ -10,7 +10,7 @@ const weaponNameDisplay2 = document.getElementById("weaponNameDisplay2");
 const DuelText1 = document.getElementById("duelText1");
 const DuelText2 = document.getElementById("duelText2");
 
-const varientCheckbox = document.getElementById('varientCheckbox');
+const variantCheckbox = document.getElementById('variantCheckbox');
 
 let weaponData = null;
 let allData = null;
@@ -28,7 +28,7 @@ fetch('data/weapons.json')
     return response.json(); 
 })
 .then(function(myData) {
-    allData = myData
+    allData = myData;
 })
 .catch(function(error) {
     console.error("Oops, something went wrong:", error);
@@ -47,8 +47,7 @@ function setupData(data)
     {
         for (i=0; i<5; i++)
         {
-            weaponData[i].weapons = weaponData[i].weapons.filter(weaponObj => weaponObj.base == 1);
-            console.log(weaponData[i].weapons);          
+            weaponData[i].weapons = weaponData[i].weapons.filter(weaponObj => weaponObj.base == 1);      
         }
     }
 
@@ -80,7 +79,7 @@ function getPool(max_slot)
 
 randomizeButton.onclick = function() {
 
-    if (varientCheckbox.checked) 
+    if (variantCheckbox.checked)
     {
         baseOnly = false;
     }else
