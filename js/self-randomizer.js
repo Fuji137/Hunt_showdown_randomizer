@@ -10,7 +10,10 @@ const weaponNameDisplay2 = document.getElementById("weaponNameDisplay2");
 const DuelText1 = document.getElementById("duelText1");
 const DuelText2 = document.getElementById("duelText2");
 
+const varientCheckbox = document.getElementById('varientCheckbox');
+
 let weaponData = null;
+let allData = null;
 let max_slot = 5;
 let weapons5 = null;
 let weapons4 = null;
@@ -18,19 +21,14 @@ let weapons3 = null;
 let weapons2 = null;
 let weapons1 = null;
 
+let baseOnly = false;
+
 fetch('data/weapons.json')
 .then(function(response) {
     return response.json(); 
 })
 .then(function(myData) {
-    console.log("Success! Here is the data from the JSON file:");
-    console.log(myData);
-    weaponData = myData;
-    weapons5 = [...weaponData[0].weapons, ...weaponData[1].weapons,...weaponData[2].weapons,...weaponData[3].weapons,...weaponData[4].weapons];
-    weapons4 = [...weaponData[0].weapons, ...weaponData[1].weapons,...weaponData[2].weapons,...weaponData[3].weapons];
-    weapons3 = [...weaponData[0].weapons, ...weaponData[1].weapons,...weaponData[2].weapons];
-    weapons2 = [...weaponData[0].weapons, ...weaponData[1].weapons];
-    weapons1 = [...weaponData[0].weapons];
+    allData = myData
 })
 .catch(function(error) {
     console.error("Oops, something went wrong:", error);
@@ -39,6 +37,26 @@ fetch('data/weapons.json')
 sliderElement.oninput = function() {
     displayElement.textContent = this.value;
     max_slot = this.value;
+}
+
+function setupData(data)
+{
+    weaponData = data;
+
+    if(baseOnly)
+    {
+        for (i=0; i<5; i++)
+        {
+            weaponData[i].weapons = weaponData[i].weapons.filter(weaponObj => weaponObj.base == 1);
+            console.log(weaponData[i].weapons);          
+        }
+    }
+
+    weapons5 = [...weaponData[0].weapons, ...weaponData[1].weapons,...weaponData[2].weapons,...weaponData[3].weapons,...weaponData[4].weapons];
+    weapons4 = [...weaponData[0].weapons, ...weaponData[1].weapons,...weaponData[2].weapons,...weaponData[3].weapons];
+    weapons3 = [...weaponData[0].weapons, ...weaponData[1].weapons,...weaponData[2].weapons];
+    weapons2 = [...weaponData[0].weapons, ...weaponData[1].weapons];
+    weapons1 = [...weaponData[0].weapons];
 }
 
 function getPool(max_slot)
@@ -61,6 +79,16 @@ function getPool(max_slot)
 }
 
 randomizeButton.onclick = function() {
+
+    if (varientCheckbox.checked) 
+    {
+        baseOnly = false;
+    }else
+    {
+        baseOnly = true;
+    }
+
+    setupData(allData)
 
     max_slot = parseInt(max_slot)
 
