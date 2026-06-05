@@ -41,7 +41,7 @@ sliderElement.oninput = function() {
 
 function setupData(data)
 {
-    weaponData = data;
+    weaponData = JSON.parse(JSON.stringify(data));
 
     if(baseOnly)
     {
@@ -88,6 +88,9 @@ randomizeButton.onclick = function() {
     }
 
     setupData(allData);
+
+    console.log(weaponData);
+    console.log(allData);
 
     max_slot = parseInt(max_slot);
 
