@@ -87,9 +87,9 @@ randomizeButton.onclick = function() {
         baseOnly = true;
     }
 
-    setupData(allData)
+    setupData(allData);
 
-    max_slot = parseInt(max_slot)
+    max_slot = parseInt(max_slot);
 
     let weaponPool = null;
 
