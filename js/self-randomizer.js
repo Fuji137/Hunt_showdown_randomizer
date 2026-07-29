@@ -21,6 +21,8 @@ let weapons3 = null;
 let weapons2 = null;
 let weapons1 = null;
 
+let toolsData = null;
+
 let baseOnly = false;
 
 fetch('data/weapons.json')
@@ -32,6 +34,17 @@ fetch('data/weapons.json')
 })
 .catch(function(error) {
     console.error("Oops, something went wrong:", error);
+});
+
+fetch('data/tools_consumables.json')
+.then(function(response) {
+    return response.json(); 
+})
+.then(function(myData) {
+    toolsData = myData;
+})
+.catch(function(error) {
+    console.error("Oops, something went wrong with tools:", error);
 });
 
 sliderElement.oninput = function() {
@@ -140,4 +153,48 @@ randomizeButton.onclick = function() {
 
     weaponNameDisplay1.textContent = weapon1Name + " ("+weapon1Slot+")";
     weaponNameDisplay2.textContent = weapon2Name + " ("+weapon2Slot+")";
+
+    // Randomize Tools and Consumables
+    if (toolsData) {
+        let melees = toolsData.tools[0].melees;
+        let firstAid = toolsData.tools[0].first_aid;
+        let others = toolsData.tools[0].others;
+        let shots = toolsData.consumables.shots;
+        let throwables = toolsData.consumables.throwables;
+        let placeables = toolsData.consumables.placeables;
+
+        let restPool = [...others, ...shots, ...throwables, ...placeables];
+
+        let slot1 = melees[Math.floor(Math.random() * melees.length)];
+        let slot2 = firstAid[0]; // Guarantee first_aid_kit
+        
+        let toolImages = document.querySelectorAll('.tool-slot img');
+        
+        if (toolImages.length >= 8) {
+            // Update slot 1 (Melee)
+            toolImages[0].src = "images/tools_consumables/" + slot1 + ".png";
+            toolImages[0].alt = slot1;
+            toolImages[0].title = slot1;
+
+            // Update slot 2 (Medkit)
+            toolImages[1].src = "images/tools_consumables/" + slot2 + ".png";
+            toolImages[1].alt = slot2;
+            toolImages[1].title = slot2;
+
+            // Update slots 3 to 8
+            for (let i = 2; i < 8; i++) {
+                let randomIndex = Math.floor(Math.random() * restPool.length);
+                let randomItem = restPool[randomIndex];
+                
+                // Prevent unique tools from repeating by removing them from the pool
+                if (others.includes(randomItem)) {
+                    restPool.splice(randomIndex, 1);
+                }
+
+                toolImages[i].src = "images/tools_consumables/" + randomItem + ".png";
+                toolImages[i].alt = randomItem;
+                toolImages[i].title = randomItem;
+            }
+        }
+    }
 };
