@@ -26,6 +26,33 @@ input[type="range"] {
     gap: 20px;
 }
 
+.tool-container{
+    display: grid;
+    gap: 10px;
+}
+
+.tool-row{
+    display: flex;
+    gap: 5px;
+}
+
+.tool-slot {
+    width: 125px;
+    height: 40px;
+    border: 2px solid #000000;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #555;
+}
+
+.tool-slot img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
 .text-container{
     display: grid;
     gap: 30px;

@@ -1,0 +1,71 @@
+{
+  "tools": [
+    {
+        "melees":[
+            "dusters",
+            "heavy_knife",
+            "knife",
+            "knuckle_knife",
+            "throwing_axes",
+            "throwing_knives",
+            "throwing_spear"
+        ],
+        "first_aid":[
+            "first_aid_kit"
+        ],
+        "others":[    
+            "alert_trip_mines",
+            "bear_traps",
+            "blank_fire_decoys",
+            "choke_bombs",
+            "concentina_trip_mines",
+            "decoys",
+            "decoy_fuses",
+            "derringer_pennyshot",
+            "flare_pistol",
+            "fusees",
+            "poison_trip_mines",
+            "quad_derringer",
+            "spyglass"
+        ]
+    }
+  ],
+  "consumables": {
+    "shots": [
+      "antidote_shot",
+      "antidote_shot_weak",
+      "recovery_shot",
+      "regeneration_shot",
+      "regeneration_shot_weak",
+      "stamina_shot",
+      "stamina_shot_weak",
+      "vitality_shot",
+      "vitality_shot_weak"
+    ],
+    "throwables": [
+      "big_dynamite_bundle",
+      "chaos_bomb",
+      "concentina_bomb",
+      "dynamite_bundle",
+      "dynamite_stick",
+      "fire_bomb",
+      "flash_bomb",
+      "frag_bomb",
+      "hellfire_bomb",
+      "hive_bomb",
+      "liquid_fire_bomb",
+      "poison_bomb",
+      "sticky_bomb",
+      "waxed_dynamite_stick",
+      "choke_beetle",
+      "stalker_beetle",
+      "fire_beetle"
+    ],
+    "placeables": [
+      "ammo_box",
+      "medical_pack",
+      "tool_box",
+      "dark_dynamite_sctchel"
+    ]
+  }
+}
