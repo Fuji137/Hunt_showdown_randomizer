@@ -119,3 +119,20 @@ input[type="range"] {
     background-color: #897B85;
     transform: scale(1.1); 
 }
+
+/* Player Draft Selection Marks */
+.player1-mark {
+    border: 3px solid #ff4d4d !important;
+}
+
+.player2-mark {
+    border: 3px solid #4d4dff !important;
+}
+
+.player3-mark {
+    border: 3px solid #ffffff !important;
+}
+
+.clickable {
+    cursor: pointer;
+}
