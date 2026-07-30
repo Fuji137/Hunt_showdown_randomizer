@@ -16,11 +16,11 @@ let state = {
 // Events removed, we use Trader now
 
 const missions = [
-    "MISSION: Secure at least 2 Team Kills.",
-    "MISSION: Secure at least 4 Team Kills.",
-    "MISSION: Extract with at least one Bounty Token.",
-    "MISSION: Extract with a Full Bounty (both tokens from one boss).",
-    "BOSS MISSION: Extract Full Bounty + Secure Team Kills + Survive!"
+    "MISSION: Secure at least 1 Kill.",
+    "MISSION: Secure at least 2 Kills.",
+    "MISSION: Extract with at least one Bounty Token",
+    "MISSION: Extract with at least one Bounty Token and secure 3 kills",
+    "BOSS MISSION: Extract Full Bounty + Secure 3 Kills + Survive!"
 ];
 
 const debuffs = [
@@ -118,7 +118,7 @@ function startNewRun() {
         traderDeals: null,
         stash: {
             weapons: getRandomItems(tier1Weapons, 6),
-            tools: getRandomItems(allTools, 6),
+            tools: getRandomItems(allTools, 9),
             consumables: getRandomItems(allConsumables, 12)
         }
     };
