@@ -147,8 +147,8 @@ function renderStash() {
     state.stash.weapons.forEach((w, index) => {
         let div = document.createElement("div");
         div.className = "image-slot clickable";
-        div.style.width = "90px";
-        div.style.height = "40px"; // Changed from 90px to fix aspect ratio gap
+        div.style.width = "120px";
+        div.style.height = "45px"; 
         div.style.border = "none";
         div.style.padding = "0";
         div.style.margin = "0";
@@ -165,8 +165,8 @@ function renderStash() {
     state.stash.tools.forEach((t, index) => {
         let div = document.createElement("div");
         div.className = "tool-slot clickable";
-        div.style.width = "68px";
-        div.style.height = "68px";
+        div.style.width = "120px";
+        div.style.height = "45px";
         div.style.border = "none";
         div.style.padding = "0";
         div.style.margin = "0";
@@ -181,8 +181,8 @@ function renderStash() {
     state.stash.consumables.forEach((c, index) => {
         let div = document.createElement("div");
         div.className = "tool-slot clickable";
-        div.style.width = "68px";
-        div.style.height = "68px";
+        div.style.width = "120px";
+        div.style.height = "45px";
         div.style.border = "none";
         div.style.padding = "0";
         div.style.margin = "0";
@@ -266,9 +266,9 @@ function renderNode() {
             // Display the loot visually using stash-grid CSS
             let lootHtml = `<p><strong>Loot Acquired:</strong></p>
                             <div class="mini-stash-grid" style="margin-bottom: 20px;">`;
-            newWeapons.forEach(w => lootHtml += `<div class="image-slot" style="width:90px; height:40px; border:none; padding:0; margin:0; background:transparent;"><img src="images/weapons/${w}.png" title="${w}" style="width:100%; height:100%; object-fit:contain;"></div>`);
-            newTools.forEach(t => lootHtml += `<div class="tool-slot" style="width:68px; height:68px; border:none; padding:0; margin:0; background:transparent;"><img src="images/tools_consumables/${t}.png" title="${t}" style="width:100%; height:100%; object-fit:contain;"></div>`);
-            newConsumables.forEach(c => lootHtml += `<div class="tool-slot" style="width:68px; height:68px; border:none; padding:0; margin:0; background:transparent;"><img src="images/tools_consumables/${c}.png" title="${c}" style="width:100%; height:100%; object-fit:contain;"></div>`);
+            newWeapons.forEach(w => lootHtml += `<div class="image-slot" style="width:120px; height:45px; border:none; padding:0; margin:0; background:transparent;"><img src="images/weapons/${w}.png" title="${w}" style="width:100%; height:100%; object-fit:contain;"></div>`);
+            newTools.forEach(t => lootHtml += `<div class="tool-slot" style="width:120px; height:45px; border:none; padding:0; margin:0; background:transparent;"><img src="images/tools_consumables/${t}.png" title="${t}" style="width:100%; height:100%; object-fit:contain;"></div>`);
+            newConsumables.forEach(c => lootHtml += `<div class="tool-slot" style="width:120px; height:45px; border:none; padding:0; margin:0; background:transparent;"><img src="images/tools_consumables/${c}.png" title="${c}" style="width:100%; height:100%; object-fit:contain;"></div>`);
             lootHtml += `</div>`;
 
             nodeContentEl.innerHTML = lootHtml;

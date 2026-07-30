@@ -150,10 +150,11 @@
 }
 
 .mini-stash-grid {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
     gap: 0px 10px;
-    align-content: flex-start;
+    align-content: start;
+    justify-content: start;
 }
 .mini-stash-grid .image-slot,
 .mini-stash-grid .tool-slot {
@@ -162,8 +163,6 @@
     background-color: transparent !important;
     border: none !important;
     padding: 0 !important;
-    width: fit-content !important;
-    height: fit-content !important;
     display: flex;
     justify-content: center;
     align-items: center;
