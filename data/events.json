@@ -1,0 +1,10 @@
+[
+    "WAGER: Extract with a bounty this match. Success: Add 3 random Weapons to Stash. Failure: Scrap 2 random Weapons from Stash.",
+    "MODIFIER: You must use incendiary, dragonbreath, or explosive ammo if available this match.",
+    "WAGER: Secure 3 Team Kills this match. Success: Add 3 random Consumables. Failure: Gain 1 Strike.",
+    "MODIFIER: No scoped weapons allowed for this match.",
+    "MODIFIER: Someone must carry a melee weapon in a primary/secondary slot.",
+    "WAGER: Kill the boss with melee only. Success: Add 5 items to Stash. Failure: Scrap 3 items.",
+    "MODIFIER: Everyone must use the cheapest contraband hunters available.",
+    "WAGER: Do not use any healing items during a boss fight. Success: +2 First Aid Kits to Stash."
+]
