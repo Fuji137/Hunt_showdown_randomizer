@@ -16,10 +16,10 @@ let state = {
 // Events removed, we use Trader now
 
 const missions = [
-    "MISSION: Secure at least 1 Kill.",
-    "MISSION: Secure at least 2 Kills.",
     "MISSION: Extract with at least one Bounty Token",
-    "MISSION: Extract with at least one Bounty Token and secure 3 kills",
+    "MISSION: Secure at least 3 Kills",
+    "MISSION: Extract with at least one Bounty Token and get 3 kills",
+    "MISSION: Secure at least 5 Kills",
     "BOSS MISSION: Extract Full Bounty + Secure 3 Kills + Survive!"
 ];
 
@@ -51,11 +51,11 @@ Promise.all([
     fetch('data/tools_consumables.json').then(res => res.json()),
     fetch('spreadsheets/weapon_stats.csv').then(res => res.text())
 ]).then(([weapons, tools, csv]) => {
-    
+
     // Parse CSV to get tiers
     const weaponTiers = {};
     csv.split('\n').slice(1).forEach(line => {
-        if(!line.trim()) return;
+        if (!line.trim()) return;
         const parts = line.split(',');
         weaponTiers[parts[0].trim()] = parseInt(parts[3].trim());
     });
@@ -73,7 +73,7 @@ Promise.all([
 
     // Parse Tools
     allTools = [...tools.tools[0].melees, ...tools.tools[0].first_aid, ...tools.tools[0].others];
-    
+
     // Parse Consumables
     allConsumables = [...tools.consumables.shots, ...tools.consumables.throwables, ...tools.consumables.placeables];
 
@@ -96,8 +96,8 @@ function saveState() {
 
 function getRandomItems(pool, count) {
     let selected = [];
-    if(pool.length === 0) return selected;
-    for(let i=0; i<count; i++) {
+    if (pool.length === 0) return selected;
+    for (let i = 0; i < count; i++) {
         selected.push(pool[Math.floor(Math.random() * pool.length)]);
     }
     return selected;
@@ -132,15 +132,15 @@ function renderAll() {
     renderNode();
 }
 
-window.removeItem = function(category, index) {
-    if(!confirm("Permanently remove this item from the Stash?")) return;
+window.removeItem = function (category, index) {
+    if (!confirm("Permanently remove this item from the Stash?")) return;
     state.stash[category].splice(index, 1);
     saveState();
     renderStash();
 }
 
 function renderStash() {
-    if(!state) return;
+    if (!state) return;
 
     wCountEl.textContent = state.stash.weapons.length;
     stashWeaponsEl.innerHTML = "";
@@ -148,13 +148,13 @@ function renderStash() {
         let div = document.createElement("div");
         div.className = "image-slot clickable";
         div.style.width = "120px";
-        div.style.height = "45px"; 
+        div.style.height = "45px";
         div.style.border = "none";
         div.style.padding = "0";
         div.style.margin = "0";
         div.style.backgroundColor = "transparent";
         let picName = w;
-        if(picName.endsWith("_duel")) picName = picName.slice(0, -5);
+        if (picName.endsWith("_duel")) picName = picName.slice(0, -5);
         div.innerHTML = `<img src="images/weapons/${picName}.png" alt="${w}" title="${w}">`;
         div.onclick = () => window.removeItem('weapons', index);
         stashWeaponsEl.appendChild(div);
@@ -195,7 +195,7 @@ function renderStash() {
 
 function renderTimeline() {
     timelineEl.innerHTML = "";
-    for(let i=1; i<=15; i++) {
+    for (let i = 1; i <= 15; i++) {
         let type = "Loot";
         if (i % 3 === 2) type = "Trader";
         if (i % 3 === 0) type = "Mission";
@@ -225,7 +225,7 @@ function advanceNode() {
     renderAll();
 }
 
-window.gainStrike = function() {
+window.gainStrike = function () {
     state.strikes++;
     if (state.strikes >= 3) {
         alert("3 STRIKES! GAME OVER! Your team has been wiped. Restarting campaign...");
@@ -242,7 +242,7 @@ function renderNode() {
     if (n % 3 === 1) { // LOOT NODE
         nodeTitleEl.textContent = `Node ${n}: Loot Cache`;
         nodeContentEl.innerHTML = `<p>You found a supply cache! Click below to add randomized gear to your Team Stash.</p>`;
-        
+
         let allowedTiers = [1];
         if (n >= 4 && n < 7) allowedTiers = [1, 2];
         if (n >= 7 && n < 10) allowedTiers = [2];
@@ -253,7 +253,7 @@ function renderNode() {
         btn.textContent = "Open Loot Cache";
         btn.onclick = () => {
             let weaponPool = allWeapons.filter(w => allowedTiers.includes(w.tier)).map(w => w.name);
-            
+
             let newWeapons = getRandomItems(weaponPool, 2);
             let newTools = getRandomItems(allTools, 2);
             let newConsumables = getRandomItems(allConsumables, 4);
@@ -272,7 +272,7 @@ function renderNode() {
             lootHtml += `</div>`;
 
             nodeContentEl.innerHTML = lootHtml;
-            
+
             nodeActionsEl.innerHTML = "";
             let advanceBtn = document.createElement("button");
             advanceBtn.textContent = "Continue to next node";
@@ -283,7 +283,7 @@ function renderNode() {
 
     } else if (n % 3 === 2) { // TRADER NODE
         nodeTitleEl.textContent = `Node ${n}: Trader`;
-        
+
         let allowedTiers = [1];
         if (n >= 4 && n < 7) allowedTiers = [1, 2];
         if (n >= 7 && n < 10) allowedTiers = [2];
@@ -294,17 +294,17 @@ function renderNode() {
             let wPool = allWeapons.filter(w => allowedTiers.includes(w.tier)).map(w => w.name);
             let tcPool = [...allTools, ...allConsumables];
             state.traderDeals = [];
-            
-            for(let i=0; i<3; i++) {
+
+            for (let i = 0; i < 3; i++) {
                 let playerWeapons = state.stash.weapons;
                 let playerTC = [...state.stash.tools, ...state.stash.consumables];
-                
+
                 let possibleTypes = [];
                 if (playerWeapons.length >= 1) possibleTypes.push(1);
                 if (playerTC.length >= 2) possibleTypes.push(2);
                 if (playerWeapons.length >= 1) possibleTypes.push(3);
                 if (playerTC.length >= 2) possibleTypes.push(4);
-                
+
                 let type = 1;
                 if (possibleTypes.length > 0) {
                     type = possibleTypes[Math.floor(Math.random() * possibleTypes.length)];
@@ -331,7 +331,7 @@ function renderNode() {
         }
 
         let html = `<p>The Trader offers you these deals:</p><div style="display:flex; flex-direction:column; gap:20px;">`;
-        
+
         state.traderDeals.forEach((deal, idx) => {
             let giveHtml = [...deal.giveW, ...deal.giveTC].map(i => {
                 let isWeapon = deal.giveW.includes(i);
@@ -339,14 +339,14 @@ function renderNode() {
                 let h = isWeapon ? '40px' : '60px';
                 return `<img src="${isWeapon ? 'images/weapons' : 'images/tools_consumables'}/${i}.png" style="width:${w}; height:${h}; object-fit:contain; border: 1px solid #555; background:#222;">`;
             }).join(" + ");
-            
+
             let recHtml = [...deal.recW, ...deal.recTC].map(i => {
                 let isWeapon = deal.recW.includes(i);
                 let w = isWeapon ? '90px' : '60px';
                 let h = isWeapon ? '40px' : '60px';
                 return `<img src="${isWeapon ? 'images/weapons' : 'images/tools_consumables'}/${i}.png" style="width:${w}; height:${h}; object-fit:contain; border: 1px solid #ffea00; background:#222;">`;
             }).join(" + ");
-            
+
             html += `<div style="display:flex; align-items:center; gap: 15px; background-color: #1a1819; padding: 15px; border: 1px solid #6A5852; border-radius: 5px;">
                         <div style="flex:1;"><strong>TRADE:</strong> <br>${giveHtml}</div>
                         <div style="font-size: 24px; font-weight: bold;">&#8594;</div>
@@ -417,16 +417,16 @@ function renderNode() {
 
     } else if (n % 3 === 0) { // MISSION NODE
         let isBoss = (n === 15);
-        let mIndex = Math.floor(n/3) - 1;
-        
+        let mIndex = Math.floor(n / 3) - 1;
+
         nodeTitleEl.textContent = isBoss ? `Node 15: FINAL BOSS` : `Node ${n}: Mission`;
-        
+
         let html = `<p><strong>${missions[mIndex]}</strong></p>`;
         if (isBoss) {
-            html += `<p style="color:red; font-weight:bold;">${debuffs[Math.floor(Math.random()*debuffs.length)]}</p>`;
+            html += `<p style="color:red; font-weight:bold;">${debuffs[Math.floor(Math.random() * debuffs.length)]}</p>`;
         }
         html += `<p>Play your match. Did you complete the mission?</p>`;
-        
+
         nodeContentEl.innerHTML = html;
 
         let successBtn = document.createElement("button");
@@ -434,7 +434,7 @@ function renderNode() {
         successBtn.style.backgroundColor = "#4dff4d";
         successBtn.style.color = "#000";
         successBtn.onclick = () => advanceNode();
-        
+
         let failBtn = document.createElement("button");
         failBtn.textContent = "Mission Failed (+1 Strike)";
         failBtn.className = "danger-btn";
@@ -446,7 +446,7 @@ function renderNode() {
 }
 
 resetBtn.onclick = () => {
-    if(confirm("Are you sure you want to abandon the current run? All progress and stash items will be lost forever.")) {
+    if (confirm("Are you sure you want to abandon the current run? All progress and stash items will be lost forever.")) {
         startNewRun();
         renderAll();
     }
