@@ -16,9 +16,9 @@ let state = {
 // Events removed, we use Trader now
 
 const missions = [
-    "MISSION: Extract with at least one Bounty Token",
+    "MISSION: Secure at least 1 Kill",
     "MISSION: Secure at least 3 Kills",
-    "MISSION: Extract with at least one Bounty Token and get 3 kills",
+    "MISSION: Extract with at least one Bounty Token",
     "MISSION: Secure at least 5 Kills",
     "BOSS MISSION: Extract Full Bounty + Secure 3 Kills + Survive!"
 ];
